@@ -1,0 +1,4 @@
+[submodule "ScriptFunction"]
+	path = ScriptFunction
+	url = https://github.com/WiiPlayer2/ScriptFunction.git
+	branch = master
