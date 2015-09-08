@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RobotGame.Models.Blocks;
+using System;
 using System.Collections;
 
 namespace RobotGame.Models
@@ -18,6 +19,10 @@ namespace RobotGame.Models
             get
             {
                 return this[x / Chunk.WIDTH, z / Chunk.DEPTH][x % Chunk.WIDTH, y, z % Chunk.DEPTH];
+            }
+            set
+            {
+                this[x / Chunk.WIDTH, z / Chunk.DEPTH][x % Chunk.WIDTH, y, z % Chunk.DEPTH] = value;
             }
         }
 
