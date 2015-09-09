@@ -26,6 +26,19 @@ namespace RobotGame.Models
             }
         }
 
+        public void UnloadAll()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Tick()
+        {
+            ChunkManager.Tick();
+            RobotManager.Tick();
+        }
+
         public ChunkManager ChunkManager { get; private set; }
+
+        public RobotManager RobotManager { get; private set; }
     }
 }

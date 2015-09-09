@@ -2,15 +2,16 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace RobotGame.Models.Blocks
 {
-    public class Air : Block
+    public class Stone : Block
     {
-        public Air()
+        public Stone()
         {
-            IsSolid = false;
-            Hardness = -1;
+            IsSolid = true;
+            Hardness = 10;
         }
     }
 }

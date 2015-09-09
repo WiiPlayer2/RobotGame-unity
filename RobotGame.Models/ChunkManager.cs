@@ -90,6 +90,17 @@ namespace RobotGame.Models
             }
         }
 
+        public void Tick()
+        {
+            lock(loadedChunks)
+            {
+                foreach(var c in loadedChunks)
+                {
+                    c.Tick();
+                }
+            }
+        }
+
         public IGenerator Generator { get; private set; }
 
         public ISaveLoad SaveLoad { get; private set; }

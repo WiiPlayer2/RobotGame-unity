@@ -31,9 +31,19 @@ namespace RobotGame.Models
             }
         }
 
+        public void Tick()
+        {
+            foreach(var b in blocks)
+            {
+                b.Tick();
+            }
+        }
+
+        #region Data
         public int X { get; set; }
 
         public int Z { get; set; }
+        #endregion
 
         public IEnumerator<Block> GetEnumerator()
         {

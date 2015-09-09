@@ -9,6 +9,10 @@ namespace RobotGame.Models
     {
         Chunk LoadChunk(int x, int z);
 
-        void SaveChunk(Chunk c);
+        void SaveChunk(Chunk chunk);
+
+        Robot LoadRobot(string id);
+
+        void SaveRobot(Robot robot);
     }
 }
